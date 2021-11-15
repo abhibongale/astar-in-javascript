@@ -1,0 +1,14 @@
+<script type='text/javascript' src='./src/astar.js'></script>
+<script type='text/javascript'>
+	var graph = [
+		[0,1,1,1,1],
+		[0,1,0,0,0],
+		[0,0,0,1,0],
+		[0,0,1,1,0],
+		[0,0,1,1,0]
+	];
+	var path = new Astar(graph);
+	path.search(2,3, 5, 5);
+	// result is an array containing the shortest path
+	// resultWithWeight is an array containing the shortest path taking into account the weight of a node
+</script>
